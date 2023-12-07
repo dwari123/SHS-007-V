@@ -1,4 +1,5 @@
 Segment As screen:
+    OnVisible: =Set(search_name,"")
 
     compSegment As Component1:
         CurrentScreen: ="Administration"
@@ -65,7 +66,11 @@ Segment As screen:
 
                     TextInput1_1 As text:
                         Default: =""
+                        DelayOutput: =true
                         HintText: ="Search"
+                        HoverBorderColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        OnChange: =Set(search_name,TextInput1_1.Text)
                         Width: =236
                         X: =9
                         Y: =21
@@ -74,10 +79,22 @@ Segment As screen:
                     Icon28_4 As icon.Search:
                         Height: =40
                         Icon: =Icon.Search
+                        OnSelect: =Set(search_name,TextInput1_1.Text)
+                        Visible: =If(IsBlank(TextInput1_1.Text),true,false)
                         Width: =30
                         X: =200
                         Y: =21
                         ZIndex: =2
+
+                    Icon28 As icon.Cancel:
+                        Height: =27
+                        Icon: =Icon.Cancel
+                        OnSelect: =Set(search_name,"");Reset(TextInput1_1)
+                        Visible: =If(IsBlank(TextInput1_1.Text),false,true)
+                        Width: =28
+                        X: =202
+                        Y: =27
+                        ZIndex: =3
 
                 Container25_1 As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.None
@@ -213,7 +230,7 @@ Segment As screen:
 
             Gallery9 As gallery.galleryVertical:
                 DelayItemLoading: =true
-                Items: =Segment_2
+                Items: =Filter(Segment_2,StartsWith(Title,TextInput1_1.Text))
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
