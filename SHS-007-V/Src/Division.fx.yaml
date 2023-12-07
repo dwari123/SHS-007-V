@@ -74,9 +74,11 @@ Division As screen:
 
                 Container6 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
+                    FillPortions: =0
                     Height: =40
                     LayoutMinHeight: =100
                     LayoutMinWidth: =100
+                    Width: =100
                     ZIndex: =4
 
                     Button1_1 As button:
@@ -90,7 +92,6 @@ Division As screen:
                         PressedFill: =Self.Fill
                         Text: ="Add"
                         Width: =116
-                        X: =87
                         ZIndex: =1
 
         Container20_1 As groupContainer.horizontalAutoLayoutContainer:
