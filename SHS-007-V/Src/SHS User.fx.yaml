@@ -64,13 +64,13 @@
                     HoverFill: =Self.Fill
                     OnSelect: |+
                         =ForAll(
-                            Gallery6.AllItems As Data,
+                            Gallery7.AllItems As Data,
                             Collect(
                                 CSVData,
                                 {
-                                    DisplayName: Data.'DisplayName',
+                                    DisplayName: Data.'Display Name',
                                     Designation: Data.Designation,
-                                    UserRole: Data.'UserRole'
+                                    UserRole: Data.'User Role'
                                 }
                             )
                         );
