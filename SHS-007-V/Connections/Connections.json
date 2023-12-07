@@ -1,38 +1,4 @@
 {
-  "1d7a4542-8efb-499f-83bb-9988a30694dd": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "5d809d0c-f856-4cdc-aac2-b07088dcc01c": {
-          "value": "shared_sharepointonline"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "82992941-34a9-42fa-af98-7c417a76ed28"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "5d809d0c-f856-4cdc-aac2-b07088dcc01c"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "82992941-34a9-42fa-af98-7c417a76ed28"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "Exportflow"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "5d809d0c-f856-4cdc-aac2-b07088dcc01c"
-    },
-    "dependents": [],
-    "id": "1d7a4542-8efb-499f-83bb-9988a30694dd"
-  },
   "5d809d0c-f856-4cdc-aac2-b07088dcc01c": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",
@@ -116,5 +82,33 @@
       "1d7a4542-8efb-499f-83bb-9988a30694dd"
     ],
     "id": "5d809d0c-f856-4cdc-aac2-b07088dcc01c"
+  },
+  "6f9d6a39-8530-4781-a987-15c392a89f33": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "82992941-34a9-42fa-af98-7c417a76ed28"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "82992941-34a9-42fa-af98-7c417a76ed28"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Exportflow"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "5d809d0c-f856-4cdc-aac2-b07088dcc01c"
+    },
+    "dependents": [],
+    "id": "6f9d6a39-8530-4781-a987-15c392a89f33"
   }
 }

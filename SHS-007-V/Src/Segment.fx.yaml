@@ -72,14 +72,6 @@ Segment As screen:
                         Y: =21
                         ZIndex: =1
 
-                    Icon18 As icon.VerticalLine:
-                        Height: =40
-                        Icon: =Icon.VerticalLine
-                        Width: =50
-                        X: =164
-                        Y: =21
-                        ZIndex: =2
-
                     Icon28 As icon.Search:
                         Height: =40
                         Icon: =Icon.Search
