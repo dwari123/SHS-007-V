@@ -374,15 +374,21 @@ Segment As screen:
 
                 Button16 As button:
                     Fill: =RGBA(215, 58, 60, 1)
+                    HoverFill: =Self.Fill
                     OnSelect: |-
                         =Remove(Segment_2,Gallery9.Selected);UpdateContext({ShowPopup_Delete:false});Notify("The Segment has been deleted sucessfully",NotificationType.Success)
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
                     Text: ="Yes"
                     ZIndex: =1
 
                 Button16_1 As button:
                     Fill: =RGBA(215, 58, 60, 1)
+                    HoverFill: =Self.Fill
                     OnSelect: |-
                         =UpdateContext({ShowPopup_Delete:false})
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
                     Text: ="No"
                     ZIndex: =2
 
