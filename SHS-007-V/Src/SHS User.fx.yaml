@@ -68,12 +68,13 @@
                             Collect(
                                 CSVData,
                                 {
-                                    DisplayName: Data.'Display Name',
-                                    Designation: Data.'Division Name'
+                                    DisplayName: Data.'DisplayName',
+                                    Designation: Data.Designation,
+                                    UserRole: Data.'UserRole'
                                 }
                             )
                         );
-                        Download(Exportflow.Run(JSON(CSVData),"Division Name").file_link);
+                        Download(Exportflow.Run(JSON(CSVData),"Display Name").file_link);
                         Clear(CSVData);
                         
                     PaddingLeft: =35

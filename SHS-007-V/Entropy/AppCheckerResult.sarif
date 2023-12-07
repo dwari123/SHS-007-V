@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 15,
+                  "charLength": 14,
                   "charOffset": 108,
                   "snippet": {
-                    "text": ".'Display Name'"
+                    "text": ".'DisplayName'"
                   }
                 }
               },
@@ -39,7 +39,87 @@
           ],
           "message": {
             "arguments": [
-              "Display Name"
+              "DisplayName"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.Container7.Container8_1.Button1_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.Container7.Container8_1.Button1_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 153,
+                  "snippet": {
+                    "text": ".Designation"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "SHS User",
+                "type": "'SHS User'.'Main(shsuser)'.Container7.Container8_1.Button1_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Designation"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.Container7.Container8_1.Button1_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.Container7.Container8_1.Button1_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 193,
+                  "snippet": {
+                    "text": ".'UserRole'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "SHS User",
+                "type": "'SHS User'.'Main(shsuser)'.Container7.Container8_1.Button1_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "UserRole"
             ],
             "id": "issue"
           },
