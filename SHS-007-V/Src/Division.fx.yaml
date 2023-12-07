@@ -91,7 +91,7 @@ Division As screen:
                                     }
                                 )
                             );
-                            Download(ExportFlow.Run(JSON(CSVData),"DivisionData").filelink);
+                            Download(Exportflow.Run(JSON(CSVData),"Division Name").file_link);
                             Clear(CSVData);
                             
                         PaddingLeft: =35
@@ -116,8 +116,9 @@ Division As screen:
                                     }
                                 )
                             );
-                            Download(ExportFlow.Run(JSON(CSVData),"DivisionData").filelink);
+                            Download(Exportflow.Run(JSON(CSVData),"DivisionData").file_link);
                             Clear(CSVData);
+                            
                             
                         Width: =32
                         X: =12
