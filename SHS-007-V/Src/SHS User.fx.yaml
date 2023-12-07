@@ -89,18 +89,7 @@
                     Fill: =RGBA(5, 89, 8, 1)
                     HoverFill: =Self.Fill
                     OnSelect: |+
-                        =ForAll(
-                            Gallery6.AllItems As Data,
-                            Collect(
-                                CSVData,
-                                {
-                                    DivisiovCode: Data.'Division Code',
-                                    DivisiovName: Data.'Division Name'
-                                }
-                            )
-                        );
-                        Download(Exportflow.Run(JSON(CSVData),"Division Name").file_link);
-                        Clear(CSVData);
+                        =UpdateContext({addpopupshsuser:true})
                         
                     PaddingLeft: =35
                     PressedColor: =Color.White
