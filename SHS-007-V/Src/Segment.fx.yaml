@@ -20,111 +20,6 @@ Segment As screen:
             Width: =30
             ZIndex: =1
 
-        "'Button&heading' As groupContainer.verticalAutoLayoutContainer":
-            DropShadow: =DropShadow.None
-            FillPortions: =0
-            Height: =80
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width
-            ZIndex: =2
-
-            Container26 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.None
-                Height: =Parent.Height
-                LayoutMinHeight: =80
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =1
-
-                Segment_L As label:
-                    AlignInContainer: =AlignInContainer.Center
-                    FillPortions: =1
-                    FontWeight: =FontWeight.Bold
-                    Height: =80
-                    PaddingLeft: =35
-                    Size: =20
-                    Text: ="Segment"
-                    ZIndex: =1
-
-            Container27 As groupContainer.horizontalAutoLayoutContainer:
-                DropShadow: =DropShadow.None
-                Height: =Parent.Height
-                LayoutGap: =10
-                LayoutMinHeight: =80
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =2
-
-                Container28 As groupContainer.manualLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    LayoutMinHeight: =80
-                    LayoutMinWidth: =250
-                    Width: =250
-                    ZIndex: =1
-
-                    TextInput1 As text:
-                        Default: =""
-                        HintText: ="Search"
-                        Width: =236
-                        Y: =21
-                        ZIndex: =1
-
-                    Icon28 As icon.Search:
-                        Height: =40
-                        Icon: =Icon.Search
-                        Width: =30
-                        X: =206
-                        Y: =21
-                        ZIndex: =3
-
-                Container29 As groupContainer.manualLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    LayoutMinHeight: =80
-                    LayoutMinWidth: =200
-                    ZIndex: =2
-
-                    Button5 As button:
-                        PaddingLeft: =45
-                        Text: ="Export"
-                        Width: =176
-                        X: =22
-                        Y: =21
-                        ZIndex: =1
-
-                    Icon29 As icon.AddDocument:
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =40
-                        Icon: =Icon.AddDocument
-                        Width: =38
-                        X: =26
-                        Y: =21
-                        ZIndex: =2
-
-                Container30 As groupContainer.manualLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    LayoutMinHeight: =80
-                    LayoutMinWidth: =100
-                    Width: =100
-                    ZIndex: =3
-
-                    Button13 As button:
-                        Text: ="Add"
-                        Width: =108
-                        X: =10
-                        Y: =21
-                        ZIndex: =1
-
-                    Icon30 As icon.Add:
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =26
-                        Icon: =Icon.Add
-                        Width: =36
-                        X: =10
-                        Y: =28
-                        ZIndex: =2
-
         "'Button&heading_1' As groupContainer.verticalAutoLayoutContainer":
             DropShadow: =DropShadow.None
             FillPortions: =0
@@ -184,8 +79,10 @@ Segment As screen:
                         ZIndex: =2
 
                 Container25_1 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
                     LayoutMinHeight: =80
                     LayoutMinWidth: =100
+                    Width: =150
                     ZIndex: =2
 
                     Button5_1 As button:

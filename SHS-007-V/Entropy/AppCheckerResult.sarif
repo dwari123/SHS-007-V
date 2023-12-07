@@ -4244,36 +4244,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Segment.'Main-Segment'.'Button&heading'.Container27.Container28.TextInput1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Segment.'Main-Segment'.'Button&heading'.Container27.Container28.TextInput1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Segment",
-                "type": "Segment.'Main-Segment'.'Button&heading'.Container27.Container28.TextInput1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'SHS User'.'Main(shsuser)'.'Arrow(SHSuser)'.AccessibleLabel"
                 }
               ],
