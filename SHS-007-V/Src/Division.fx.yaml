@@ -105,6 +105,20 @@ Division As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =40
                         Icon: =Icon.Export
+                        OnSelect: |+
+                            =ForAll(
+                                Gallery6.AllItems As Data,
+                                Collect(
+                                    CSVData,
+                                    {
+                                        DivisiovCode: Data.'Division Code',
+                                        DivisiovName: Data.'Division Name'
+                                    }
+                                )
+                            );
+                            Download(ExportFlow.Run(JSON(CSVData),"DivisionData").filelink);
+                            Clear(CSVData);
+                            
                         Width: =32
                         X: =12
                         ZIndex: =2
@@ -136,6 +150,8 @@ Division As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =35
                         Icon: =Icon.Add
+                        OnSelect: |-
+                            =UpdateContext({showpopup:true})
                         Width: =35
                         X: =13
                         ZIndex: =2
