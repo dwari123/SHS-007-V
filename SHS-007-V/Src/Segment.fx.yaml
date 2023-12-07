@@ -144,7 +144,7 @@ Segment As screen:
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =1
 
-                Label25 As label:
+                "'Segment Code' As label":
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
                     Size: =15
@@ -163,7 +163,7 @@ Segment As screen:
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
-                Label30 As label:
+                "'Segment Name' As label":
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
                     Size: =15
@@ -172,6 +172,7 @@ Segment As screen:
                     ZIndex: =1
 
             Container29 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =80
@@ -179,11 +180,85 @@ Segment As screen:
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =3
 
-                Label31 As label:
+                Action_segment As label:
                     Align: =Align.Center
+                    FillPortions: =1
                     FontWeight: =FontWeight.Bold
                     Size: =15
                     Text: ="Action"
                     Width: =220
                     ZIndex: =1
+
+        Container30 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =5
+
+            Gallery9 As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Items: =Segment_2
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: |
+                    =60
+                ZIndex: =1
+
+                Container32 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =60
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Container33 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =1
+
+                        Label34 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
+                            Height: =60
+                            Text: =ThisItem.'Segment Code'
+                            ZIndex: =1
+
+                    Container33_1 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =2
+
+                        Label34_4 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
+                            Height: =60
+                            Text: =ThisItem.'Segment Name'
+                            ZIndex: =1
+
+                    Container33_2 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                        Button5 As button:
+                            Text: ="Edit"
+                            Width: =100
+                            ZIndex: =1
+
+                        Button5_2 As button:
+                            Text: ="Delete"
+                            Width: =100
+                            ZIndex: =2
 
