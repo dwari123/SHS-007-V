@@ -104,7 +104,7 @@
                     PaddingLeft: =35
                     PressedColor: =Color.White
                     PressedFill: =Self.Fill
-                    Text: ="Export"
+                    Text: ="Add"
                     Width: =130
                     ZIndex: =5
 
