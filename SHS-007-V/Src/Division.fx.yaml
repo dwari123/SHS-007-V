@@ -93,12 +93,13 @@ Division As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =40
                         Icon: =Icon.Export
-                        Width: =12
+                        Width: =32
                         X: =12
                         ZIndex: =2
 
                 Container6_1 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =40
                     LayoutMinHeight: =100
@@ -121,10 +122,10 @@ Division As screen:
 
                     Icon16_1 As icon.Add:
                         Color: =RGBA(255, 255, 255, 1)
-                        Height: =40
+                        Height: =35
                         Icon: =Icon.Add
-                        Width: =36
-                        X: =12
+                        Width: =35
+                        X: =13
                         ZIndex: =2
 
         Container20_1 As groupContainer.horizontalAutoLayoutContainer:
