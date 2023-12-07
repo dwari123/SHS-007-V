@@ -88,6 +88,7 @@ Segment As screen:
                     ZIndex: =2
 
                     Button5_1 As button:
+                        Fill: =RGBA(4, 107, 28, 1)
                         PaddingLeft: =45
                         Text: ="Export"
                         Width: =138
@@ -110,6 +111,7 @@ Segment As screen:
                     ZIndex: =3
 
                     Button13_1 As button:
+                        Fill: =RGBA(4, 107, 28, 1)
                         OnSelect: |-
                             =UpdateContext({ShowPopup:true})
                         Text: ="Add"
@@ -315,6 +317,7 @@ Segment As screen:
                 ZIndex: =2
 
             Container36 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
@@ -472,6 +475,7 @@ Segment As screen:
                             ZIndex: =4
 
             Container38 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =100
                 LayoutAlignItems: =LayoutAlignItems.Center
