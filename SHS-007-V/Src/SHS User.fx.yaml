@@ -58,17 +58,56 @@
                     X: =577
                     Y: =62
 
-                "'Add doc_Button_12' As 'Add doc_Button'":
-                    LayoutMinHeight: =640
-                    LayoutMinWidth: =640
-                    ZIndex: =2
-
-                Button5 As button:
+                Button1_3 As button:
+                    DisabledFill: =Self.Fill
                     Fill: =RGBA(5, 89, 8, 1)
-                    OnSelect: |-
-                        =UpdateContext({addpopupshsuser:true})
+                    HoverFill: =Self.Fill
+                    OnSelect: |+
+                        =ForAll(
+                            Gallery7.AllItems As Data,
+                            Collect(
+                                CSVData,
+                                {
+                                    DisplayName: Data.'Display Name',
+                                    Designation: Data.Designation,
+                                    UserRole: Data.'User Role'
+                                }
+                            )
+                        );
+                        Download(Exportflow.Run(JSON(CSVData),"Display Name").file_link);
+                        Clear(CSVData);
+                        
+                    PaddingLeft: =35
+                    PressedColor: =Color.White
+                    PressedFill: =Self.Fill
+                    Text: ="Export"
+                    Width: =130
+                    ZIndex: =4
+
+                Button1_4 As button:
+                    DisabledFill: =Self.Fill
+                    Fill: =RGBA(5, 89, 8, 1)
+                    HoverFill: =Self.Fill
+                    OnSelect: |+
+                        =ForAll(
+                            Gallery6.AllItems As Data,
+                            Collect(
+                                CSVData,
+                                {
+                                    DivisiovCode: Data.'Division Code',
+                                    DivisiovName: Data.'Division Name'
+                                }
+                            )
+                        );
+                        Download(Exportflow.Run(JSON(CSVData),"Division Name").file_link);
+                        Clear(CSVData);
+                        
+                    PaddingLeft: =35
+                    PressedColor: =Color.White
+                    PressedFill: =Self.Fill
                     Text: ="Add"
-                    ZIndex: =3
+                    Width: =130
+                    ZIndex: =5
 
         Container9 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
