@@ -74,7 +74,7 @@ Division As screen:
 
                 Container6 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
-                    Height: =80
+                    Height: =40
                     LayoutMinHeight: =100
                     LayoutMinWidth: =100
                     ZIndex: =4
@@ -82,7 +82,6 @@ Division As screen:
                     Button1_1 As button:
                         DisabledFill: =Self.Fill
                         Fill: =RGBA(5, 89, 8, 1)
-                        Height: =38
                         HoverFill: =Self.Fill
                         OnSelect: |-
                             =UpdateContext({showpopup:true})
@@ -92,7 +91,6 @@ Division As screen:
                         Text: ="Add"
                         Width: =116
                         X: =87
-                        Y: =21
                         ZIndex: =1
 
         Container20_1 As groupContainer.horizontalAutoLayoutContainer:
