@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
+                  "charLength": 15,
                   "charOffset": 108,
                   "snippet": {
-                    "text": ".'Display nam'"
+                    "text": ".'Display Name'"
                   }
                 }
               },
@@ -39,7 +39,7 @@
           ],
           "message": {
             "arguments": [
-              "Display nam"
+              "Display Name"
             ],
             "id": "issue"
           },
