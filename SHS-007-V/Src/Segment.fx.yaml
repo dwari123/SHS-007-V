@@ -58,6 +58,7 @@ Segment As screen:
                 ZIndex: =2
 
                 Container25 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
                     ZIndex: =1
@@ -79,6 +80,7 @@ Segment As screen:
                         ZIndex: =2
 
                 Container25_1 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
                     FillPortions: =0
                     LayoutMinHeight: =80
                     LayoutMinWidth: =100
@@ -102,6 +104,7 @@ Segment As screen:
                         ZIndex: =2
 
                 Container25_2 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
                     LayoutMinHeight: =80
                     LayoutMinWidth: =100
                     ZIndex: =3
@@ -121,4 +124,66 @@ Segment As screen:
                         X: =9
                         Y: =28
                         ZIndex: =2
+
+        Header As groupContainer.horizontalAutoLayoutContainer:
+            BorderThickness: =1
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+
+            Container27 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =80
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Label25 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =15
+                    Text: ="Segment Code"
+                    Width: =220
+                    Y: =130
+                    ZIndex: =1
+
+            Container28 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =80
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =2
+
+                Label30 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =15
+                    Text: ="Segment Name"
+                    Width: =220
+                    ZIndex: =1
+
+            Container29 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =80
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Label31 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =15
+                    Text: ="Action"
+                    Width: =220
+                    ZIndex: =1
 
