@@ -68,7 +68,7 @@
                             Collect(
                                 CSVData,
                                 {
-                                    DivisiovCode: Data.'Division Code',
+                                    DisplayName: Data.'Display nam',
                                     DivisiovName: Data.'Division Name'
                                 }
                             )
