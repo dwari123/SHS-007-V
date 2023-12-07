@@ -322,7 +322,7 @@ Segment As screen:
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =3
 
-                Form5 As form:
+                Form_Segment As form:
                     DataSource: =Segment_2
                     DefaultMode: =FormMode.New
                     Height: =250
@@ -342,14 +342,16 @@ Segment As screen:
                         MaxLength: =DataSourceInfo([@Segment_2], DataSourceInfo.MaxLength, "Title")
                         Required: =true
                         Update: =DataCardValue3.Text
-                        Width: =900
-                        X: =0
+                        Width: =800
+                        X: =20
                         Y: =0
                         ZIndex: =2
 
                         DataCardKey3 As label:
                             AutoHeight: =true
+                            FontWeight: =FontWeight.Semibold
                             Height: =34
+                            Size: =15
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -371,7 +373,7 @@ Segment As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                            Y: =62
                             ZIndex: =2
 
                         ErrorMessage3 As label:
@@ -410,14 +412,16 @@ Segment As screen:
                         MaxLength: =DataSourceInfo([@Segment_2], DataSourceInfo.MaxLength, "SegmentName")
                         Required: =true
                         Update: =DataCardValue11.Text
-                        Width: =900
+                        Width: =800
                         X: =0
                         Y: =1
                         ZIndex: =2
 
                         DataCardKey11 As label:
                             AutoHeight: =true
+                            FontWeight: =FontWeight.Semibold
                             Height: =34
+                            Size: =15
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -439,7 +443,7 @@ Segment As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                            Y: =62
                             ZIndex: =2
 
                         ErrorMessage11 As label:
@@ -468,6 +472,8 @@ Segment As screen:
                             ZIndex: =4
 
             Container38 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =100
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutGap: =50
                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -475,4 +481,17 @@ Segment As screen:
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =4
+
+                Button13 As button:
+                    OnSelect: |-
+                        =SubmitForm(Form_Segment);NewForm(Form_Segment);
+                        UpdateContext({ShowPopup:false});Notify("The Segment has been added sucessfully",NotificationType.Success);ResetForm(Form_Segment)
+                    Text: ="Save"
+                    ZIndex: =1
+
+                Button13_2 As button:
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup:false})
+                    Text: ="Cancel"
+                    ZIndex: =2
 
