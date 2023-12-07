@@ -69,7 +69,7 @@
                                 CSVData,
                                 {
                                     DisplayName: Data.'Display Name',
-                                    DivisiovName: Data.'Division Name'
+                                    Designation: Data.'Division Name'
                                 }
                             )
                         );
