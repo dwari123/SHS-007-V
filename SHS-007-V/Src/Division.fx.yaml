@@ -67,18 +67,13 @@ Division As screen:
                     X: =577
                     Y: =62
 
-                Button13 As button:
-                    Fill: =RGBA(22, 87, 19, 1)
-                    Text: ="Export"
-                    ZIndex: =2
-
                 Container6 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
                     FillPortions: =0
                     Height: =40
                     LayoutMinHeight: =100
                     LayoutMinWidth: =100
-                    Width: =100
+                    Width: =130
                     ZIndex: =4
 
                     Button1_1 As button:
@@ -90,9 +85,47 @@ Division As screen:
                         PaddingLeft: =35
                         PressedColor: =Color.White
                         PressedFill: =Self.Fill
+                        Text: ="Export"
+                        Width: =130
+                        ZIndex: =1
+
+                    Icon16 As icon.Add:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =40
+                        Icon: =Icon.Export
+                        Width: =12
+                        X: =12
+                        ZIndex: =2
+
+                Container6_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    FillPortions: =0
+                    Height: =40
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =100
+                    Width: =130
+                    ZIndex: =5
+
+                    Button1_2 As button:
+                        DisabledFill: =Self.Fill
+                        Fill: =RGBA(5, 89, 8, 1)
+                        HoverFill: =Self.Fill
+                        OnSelect: |-
+                            =UpdateContext({showpopup:true})
+                        PaddingLeft: =35
+                        PressedColor: =Color.White
+                        PressedFill: =Self.Fill
                         Text: ="Add"
                         Width: =116
                         ZIndex: =1
+
+                    Icon16_1 As icon.Add:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =40
+                        Icon: =Icon.Add
+                        Width: =36
+                        X: =12
+                        ZIndex: =2
 
         Container20_1 As groupContainer.horizontalAutoLayoutContainer:
             BorderThickness: =2
