@@ -80,8 +80,20 @@ Division As screen:
                         DisabledFill: =Self.Fill
                         Fill: =RGBA(5, 89, 8, 1)
                         HoverFill: =Self.Fill
-                        OnSelect: |-
-                            =UpdateContext({showpopup:true})
+                        OnSelect: |+
+                            =ForAll(
+                                Gallery6.AllItems As Data,
+                                Collect(
+                                    CSVData,
+                                    {
+                                        DivisiovCode: Data.'Division Code',
+                                        DivisiovName: Data.'Division Name'
+                                    }
+                                )
+                            );
+                            Download(ExportFlow.Run(JSON(CSVData),"DivisionData").filelink);
+                            Clear(CSVData);
+                            
                         PaddingLeft: =35
                         PressedColor: =Color.White
                         PressedFill: =Self.Fill
