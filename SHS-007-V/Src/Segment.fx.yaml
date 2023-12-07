@@ -88,8 +88,12 @@ Segment As screen:
                     ZIndex: =2
 
                     Button5_1 As button:
+                        DisabledColor: =RGBA(255, 255, 255, 1)
                         Fill: =RGBA(4, 107, 28, 1)
+                        HoverFill: =ColorFade(Self.BorderColor, 20%)
                         PaddingLeft: =45
+                        PressedColor: =Self.Color
+                        PressedFill: =ColorFade(Self.BorderColor, 20%)
                         Text: ="Export"
                         Width: =138
                         Y: =21
@@ -111,9 +115,14 @@ Segment As screen:
                     ZIndex: =3
 
                     Button13_1 As button:
+                        DisabledColor: =RGBA(255, 255, 255, 1)
+                        DisabledFill: =RGBA(4, 107, 28, 1)
                         Fill: =RGBA(4, 107, 28, 1)
+                        HoverFill: =ColorFade(Self.BorderColor, 20%)
                         OnSelect: |-
                             =UpdateContext({ShowPopup:true})
+                        PressedColor: =ColorFade(Self.BorderColor, 20%)
+                        PressedFill: =ColorFade(Self.BorderColor, 20%)
                         Text: ="Add"
                         Width: =108
                         X: =9
