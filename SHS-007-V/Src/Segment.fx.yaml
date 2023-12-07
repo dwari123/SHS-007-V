@@ -605,14 +605,22 @@ Segment As screen:
                 ZIndex: =4
 
                 Button13_3 As button:
+                    Fill: =RGBA(71, 158, 245, 1)
+                    HoverFill: =Self.Fill
                     OnSelect: |-
                         =SubmitForm(Form5);UpdateContext({ShowPopup_Edit:false});Notify("The Segment has been Updated sucessfully",NotificationType.Success);ResetForm(Form5);
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
                     Text: ="Save"
                     ZIndex: =1
 
                 Button13_4 As button:
+                    Fill: =RGBA(71, 158, 245, 1)
+                    HoverFill: =Self.Fill
                     OnSelect: |-
                         =UpdateContext({ShowPopup_Edit:false})
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
                     Text: ="Cancel"
                     ZIndex: =2
 
