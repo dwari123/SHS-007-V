@@ -6464,6 +6464,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Segment.'Main-Segment'.'Button&heading_1'.Container27_4.Container25_1.Container6_4.Icon16_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Segment.'Main-Segment'.'Button&heading_1'.Container27_4.Container25_1.Container6_4.Icon16_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Segment",
+                "type": "Segment.'Main-Segment'.'Button&heading_1'.Container27_4.Container25_1.Container6_4.Icon16_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Segment.'Main-Segment'.'Button&heading_1'.Container27_4.Container25_1.Container6_4.Icon16_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Segment.'Main-Segment'.'Button&heading_1'.Container27_4.Container25_1.Container6_4.Icon16_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Segment",
+                "type": "Segment.'Main-Segment'.'Button&heading_1'.Container27_4.Container25_1.Container6_4.Icon16_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.search_name"
                 }
               ],
