@@ -149,18 +149,17 @@ Segment As screen:
                             Icon: =Icon.Export
                             OnSelect: |+
                                 =ForAll(
-                                    Gallery6.AllItems As Data,
+                                    Gallery9.AllItems As Data,
                                     Collect(
                                         CSVData,
                                         {
-                                            DivisiovCode: Data.'Division Code',
-                                            DivisiovName: Data.'Division Name'
+                                            SegmentCode:Data.'Segment Code',
+                                            SegmentName:Data.'Segment Name'
                                         }
                                     )
                                 );
-                                Download(Exportflow.Run(JSON(CSVData),"DivisionData").file_link);
+                                Download(Exportflow.Run(JSON(CSVData),"Segment Name").file_link);
                                 Clear(CSVData);
-                                
                                 
                             Width: =32
                             X: =12
