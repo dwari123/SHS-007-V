@@ -1,13 +1,13 @@
 "'SHS Configuration' As screen":
 
-    Component1_18 As Component1:
+    SHSConfigComp As Component1:
         CurrentScreen: ="Configuration"
         Height: =768
 
     CanVasContainer_16 As groupContainer.manualLayoutContainer:
         Height: =App.Height-Component1_1.ComHeaderHeight
         Width: =App.Width-Component1_1.VarMenuWidth
-        X: =Component1_18.VarMenuWidth
+        X: =SHSConfigComp.VarMenuWidth
         Y: =Component1_1.ComHeaderHeight
         ZIndex: =7
 
@@ -52,4 +52,13 @@
             X: =702
             Y: =84
             ZIndex: =4
+
+    "'SHSConfig Main' As groupContainer.verticalAutoLayoutContainer":
+        Height: =App.Height-SHSConfigComp.ComHeaderHeight
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =App.Width-SHSConfigComp.VarMenuWidth
+        X: =SHSConfigComp.VarMenuWidth
+        Y: =SHSConfigComp.ComHeaderHeight
+        ZIndex: =8
 
