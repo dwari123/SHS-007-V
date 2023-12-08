@@ -124,12 +124,12 @@ Segment As screen:
                             HoverFill: =Self.Fill
                             OnSelect: |+
                                 =ForAll(
-                                    Gallery6.AllItems As Data,
+                                    Gallery9.AllItems As Data,
                                     Collect(
                                         CSVData,
                                         {
-                                            DivisiovCode: Data.'Division Code',
-                                            DivisiovName: Data.'Division Name'
+                                            SegmentCode:Data.'Segment Code',
+                                            SegmentName:Data.'Segment Name'
                                         }
                                     )
                                 );
