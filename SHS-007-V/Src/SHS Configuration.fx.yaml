@@ -198,6 +198,7 @@
                             ZIndex: =2
 
                         Button17 As button:
+                            Height: =35
                             Text: ="Button"
                             ZIndex: =3
 
