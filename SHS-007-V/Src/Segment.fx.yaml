@@ -103,18 +103,6 @@ Segment As screen:
                     Width: =150
                     ZIndex: =2
 
-                    Button5_1 As button:
-                        DisabledColor: =RGBA(255, 255, 255, 1)
-                        Fill: =RGBA(4, 107, 28, 1)
-                        HoverFill: =ColorFade(Self.BorderColor, 20%)
-                        PaddingLeft: =45
-                        PressedColor: =Self.Color
-                        PressedFill: =ColorFade(Self.BorderColor, 20%)
-                        Text: ="Export"
-                        Width: =138
-                        Y: =21
-                        ZIndex: =1
-
                     Icon29_1 As icon.AddDocument:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =40
@@ -123,6 +111,59 @@ Segment As screen:
                         X: =14
                         Y: =21
                         ZIndex: =2
+
+                    Container6_4 As groupContainer.manualLayoutContainer:
+                        Height: =40
+                        Width: =130
+                        Y: =21
+                        ZIndex: =3
+
+                        Button1_5 As button:
+                            DisabledFill: =Self.Fill
+                            Fill: =RGBA(5, 89, 8, 1)
+                            HoverFill: =Self.Fill
+                            OnSelect: |+
+                                =ForAll(
+                                    Gallery9.AllItems As Data,
+                                    Collect(
+                                        CSVData,
+                                        {
+                                            SegmentCode:Data.'Segment Code',
+                                            SegmentName:Data.'Segment Name'
+                                        }
+                                    )
+                                );
+                                Download(Exportflow.Run(JSON(CSVData),"Segment Name").file_link);
+                                Clear(CSVData);
+                                
+                            PaddingLeft: =35
+                            PressedColor: =Color.White
+                            PressedFill: =Self.Fill
+                            Text: ="Export"
+                            Width: =130
+                            ZIndex: =1
+
+                        Icon16_4 As icon.Add:
+                            Color: =RGBA(255, 255, 255, 1)
+                            Height: =40
+                            Icon: =Icon.Export
+                            OnSelect: |+
+                                =ForAll(
+                                    Gallery9.AllItems As Data,
+                                    Collect(
+                                        CSVData,
+                                        {
+                                            SegmentCode:Data.'Segment Code',
+                                            SegmentName:Data.'Segment Name'
+                                        }
+                                    )
+                                );
+                                Download(Exportflow.Run(JSON(CSVData),"Segment Name").file_link);
+                                Clear(CSVData);
+                                
+                            Width: =32
+                            X: =12
+                            ZIndex: =2
 
                 Container25_2 As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.None
